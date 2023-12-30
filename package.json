@@ -1,0 +1,42 @@
+{
+  "name": "starwars-api",
+  "version": "1.0.0",
+  "description": "me for starwars api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node src/index --watch",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint --fix",
+    "build": "rm -rf build && mkdir build",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "swapi",
+    "starwars",
+    "api"
+  ],
+  "author": "todos los del zoom",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "2",
+    "redis": "^4.6.12"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/plugin-transform-runtime": "^7.23.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/runtime": "^7.23.7",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^8.0.0"
+  }
+}
